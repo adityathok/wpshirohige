@@ -23,7 +23,7 @@ $wpshirohige_includes = array(
 	'/extras.php',                          // Custom functions that act independently of the theme templates.
 	'/customizer.php',                      // Customizer additions.
 	'/custom-comments.php',                 // Custom Comments file.
-	'/class-wp-bootstrap-navwalker.php',    // Load custom WordPress nav walker. Trying to get deeper navigation? Check out: https://github.com/wpshirohige/wpshirohige/issues/567.
+	'/class-wp-bootstrap-navwalker.php',    // Load custom WordPress nav walker. Trying to get deeper navigation? Check out: https://github.com/adityathok/wpshirohige/issues/567.
 	'/editor.php',                          // Load Editor functions.
 	'/deprecated.php',                      // Load deprecated functions.
 );
