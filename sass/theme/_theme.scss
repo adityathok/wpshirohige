@@ -1,1 +1,10 @@
 // This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+blockquote {
+    padding: 1rem;
+    background: #f4f4f4;
+    border-left: 5px solid var(--secondary);
+    font-style: italic;
+    p:last-child {
+        margin-bottom: 0;
+    }
+}

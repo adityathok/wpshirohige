@@ -1,0 +1,42 @@
+/*
+* Use existing Bootstrap 4 classes and
+* variables to extend - override Comment form style
+*
+*/
+
+#comments {
+    margin: 2rem 0;
+
+    .comments-title {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+
+    .comment-list {
+        padding: 0;
+        list-style: none;
+
+        .comment-meta {
+            clear: both;
+            margin-bottom: .5rem;
+
+            .comment-author img {
+                float: left;
+                margin: 0 .75rem .75rem 0;
+            }
+        }
+
+        .comment-content {
+            clear: both;
+
+            h1 {
+                font-size: 1.3rem;
+            }
+        }
+
+        .says {
+            display: none;
+        }
+
+    }
+}
