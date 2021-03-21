@@ -10,33 +10,99 @@
     .comments-title {
         font-size: 1.3rem;
         margin-bottom: 1rem;
+        text-transform: uppercase;
+
+        span {
+            text-transform: none;
+        }
     }
 
     .comment-list {
         padding: 0;
         list-style: none;
+        
+        .comment {
+            margin-top: 2rem;
+            position: relative; 
+            
+            .comment-body {
 
-        .comment-meta {
-            clear: both;
-            margin-bottom: .5rem;
+                .comment-meta {
+                    clear: both;
+                    margin-bottom: .5rem;
 
-            .comment-author img {
-                float: left;
-                margin: 0 .75rem .75rem 0;
+                    .comment-author img {
+                        float: left;
+                        margin: 0 .75rem .75rem 0;
+                    }
+                }
+
+                .comment-content {
+                    clear: both;
+                    padding-left: 3.7rem;
+
+                    h1 {
+                        font-size: 1.3rem;
+                    }
+                }
+
+                .reply {
+                    .comment-reply-link {
+                        position: relative;
+                        margin-left: 3.7rem;
+                    }
+
+                    .comment-reply-link:before {
+                        content: '\f112';
+                        font-family: 'FontAwesome';
+                        margin-right: .3rem;
+                    }
+                }
+
+                .says {
+                    display: none;
+                }
+
+            }
+
+            .comment-respond {
+                background: #f3f3f3;
+                padding: 1rem;
+                margin: 1rem 0;
+
+                .comment-reply-title {
+                    font-size: 1.25rem;
+
+                    #cancel-comment-reply-link {
+                        margin-left: 1rem;
+                        position: relative;
+                    }
+                }
+            }
+
+        }
+
+        .comment-author-admin {
+            background: #fffcec;
+            padding: .3rem;
+            border-left: 2px solid #e4debe;
+
+            .comment-author {
+                .url {
+                    position: relative;
+                }
+                .url:before {
+                    content: '\f005';
+                    font-family: 'FontAwesome';
+                    margin-right: .3rem;
+                }
             }
         }
 
-        .comment-content {
-            clear: both;
-
-            h1 {
-                font-size: 1.3rem;
-            }
-        }
-
-        .says {
-            display: none;
-        }
-
+    }
+    
+    ol.children {
+        list-style: none;
+        padding-left: 3.7rem;
     }
 }
