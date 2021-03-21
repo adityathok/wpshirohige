@@ -13,7 +13,7 @@ WPshirohige is based on Understrap (https://github.com/understrap/understrap), I
 - Jetpack ready.
 - WooCommerce support.
 - Contact Form 7 support.
-- [Child Theme](https://github.com/wpshirohige/wpshirohige-child) ready.
+- [Child Theme](https://github.com/adityathok/wpshirohige-child) ready.
 - Translation ready.
 
 ## Starter Theme + HTML Framework = WordPress Theme Framework
@@ -29,7 +29,7 @@ Some basics about the Sass and CSS files that come with wpshirohige:
 
  ```@import "theme/theme_variables";  // 1. Add your variables into this file. Also add variables to overwrite Bootstrap or wpshirohige variables here
  @import "../src/bootstrap-sass/assets/stylesheets/bootstrap";  // 2. All the Bootstrap stuff - Don´t edit this!
- @import "wpshirohige/wpshirohige"; // 3. Some basic WordPress stylings and needed styles to combine Boostrap and Underscores
+ @import "adityathok/wpshirohige"; // 3. Some basic WordPress stylings and needed styles to combine Boostrap and Underscores
  @import "../src/fontawesome/scss/font-awesome"; // 4. Font Awesome Icon styles
  // Any additional imported files //
  @import "theme/theme";  // 5. Add your styles into this file

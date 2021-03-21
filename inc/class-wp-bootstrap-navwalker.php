@@ -182,7 +182,7 @@ if ( ! class_exists( 'wpshirohige_WP_Bootstrap_Navwalker' ) ) {
 			}
 
 			$atts['target'] = ! empty( $item->target ) ? $item->target : '';
-			if ( '_blank' === $item->target && empty( $item->xfn ) ) { // Thanks to LukaszJaro, see https://github.com/wpshirohige/wpshirohige/issues/973.
+			if ( '_blank' === $item->target && empty( $item->xfn ) ) { // Thanks to LukaszJaro, see https://github.com/adityathok/wpshirohige/issues/973.
 				$atts['rel'] = 'noopener noreferrer';
 			} else {
 				$atts['rel'] = $item->xfn;

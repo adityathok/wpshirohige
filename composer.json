@@ -1,5 +1,5 @@
 {
-	"name": "wpshirohige/wpshirohige",
+	"name": "adityathok/wpshirohige",
 	"description": "Combines Automattic´s Underscores Starter Theme and Bootstrap 4",
 	"type": "wordpress-theme",
 	"license": "GPL-2.0-only",
@@ -9,7 +9,7 @@
 		"theme",
 		"bootstrap"
 	],
-	"homepage": "https://github.com/wpshirohige/wpshirohige",
+	"homepage": "https://github.com/adityathok/wpshirohige",
 	"require": {
 		"composer/installers": "^1.10",
 		"php": ">=5.6"
@@ -27,7 +27,7 @@
 		"lint:php": ["@php ./vendor/bin/parallel-lint --exclude .git --exclude vendor ."]
 	},
 	"support": {
-		"issues": "https://github.com/wpshirohige/wpshirohige/issues",
-		"source": "https://github.com/wpshirohige/wpshirohige"
+		"issues": "https://github.com/adityathok/wpshirohige/issues",
+		"source": "https://github.com/adityathok/wpshirohige"
 	}
 }

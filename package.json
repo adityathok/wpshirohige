@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/wpshirohige/wpshirohige.git"
+    "url": "https://github.com/adityathok/wpshirohige.git"
   },
   "keywords": [
     "wordpress",
@@ -20,10 +20,10 @@
     "bootstrap",
     "underscores"
   ],
-  "author": "The wpshirohige Authors (https://github.com/wpshirohige/wpshirohige/graphs/contributors)",
+  "author": "The wpshirohige Authors (https://github.com/adityathok/wpshirohige/graphs/contributors)",
   "license": "GPL-2.0",
   "bugs": {
-    "url": "https://github.com/wpshirohige/wpshirohige/issues"
+    "url": "https://github.com/adityathok/wpshirohige/issues"
   },
   "homepage": "https://wpshirohige.com",
   "dependencies": {},
