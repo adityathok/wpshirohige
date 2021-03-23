@@ -2,24 +2,24 @@
 /**
  * Custom header setup
  *
- * @package wpshirohige
+ * @package wpmulai
  */
 
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
-add_action( 'after_setup_theme', 'wpshirohige_custom_header_setup' );
+add_action( 'after_setup_theme', 'wpmulai_custom_header_setup' );
 
-if ( ! function_exists( 'wpshirohige_custom_header_setup' ) ) {
+if ( ! function_exists( 'wpmulai_custom_header_setup' ) ) {
 	/**
 	 * Set up custom header feature.
 	 */
-	function wpshirohige_custom_header_setup() {
+	function wpmulai_custom_header_setup() {
 
 		/**
-		 * Filter wpshirohige custom-header support arguments.
+		 * Filter wpmulai custom-header support arguments.
 		 *
-		 * @since wpshirohige 0.5.2
+		 * @since wpmulai 0.5.2
 		 *
 		 * @param array $args {
 		 *     An array of custom-header support arguments.
@@ -36,7 +36,7 @@ if ( ! function_exists( 'wpshirohige_custom_header_setup' ) ) {
 		add_theme_support(
 			'custom-header',
 			apply_filters(
-				'wpshirohige_custom_header_args',
+				'wpmulai_custom_header_args',
 				array(
 					'default-image' => get_parent_theme_file_uri( '/img/header.jpg' ),
 					'width'         => 2000,
@@ -51,7 +51,7 @@ if ( ! function_exists( 'wpshirohige_custom_header_setup' ) ) {
 				'default-image' => array(
 					'url'           => '%s/img/header.jpg',
 					'thumbnail_url' => '%s/img/header.jpg',
-					'description'   => __( 'Default Header Image', 'wpshirohige' ),
+					'description'   => __( 'Default Header Image', 'wpmulai' ),
 				),
 			)
 		);

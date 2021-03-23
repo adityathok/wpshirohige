@@ -7,7 +7,7 @@
  * and that other 'pages' on your WordPress site will use a
  * different template.
  *
- * @package wpshirohige
+ * @package wpmulai
  */
 
 // Exit if accessed directly.
@@ -15,7 +15,7 @@ defined( 'ABSPATH' ) || exit;
 
 get_header();
 
-$container = get_theme_mod( 'wpshirohige_container_type' );
+$container = get_theme_mod( 'wpmulai_container_type' );
 
 ?>
 

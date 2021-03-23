@@ -2,7 +2,7 @@
 /**
  * Theme basic setup
  *
- * @package wpshirohige
+ * @package wpmulai
  */
 
 // Exit if accessed directly.
@@ -13,9 +13,9 @@ if ( ! isset( $content_width ) ) {
 	$content_width = 640; /* pixels */
 }
 
-add_action( 'after_setup_theme', 'wpshirohige_setup' );
+add_action( 'after_setup_theme', 'wpmulai_setup' );
 
-if ( ! function_exists( 'wpshirohige_setup' ) ) {
+if ( ! function_exists( 'wpmulai_setup' ) ) {
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
 	 *
@@ -23,14 +23,14 @@ if ( ! function_exists( 'wpshirohige_setup' ) ) {
 	 * runs before the init hook. The init hook is too late for some features, such
 	 * as indicating support for post thumbnails.
 	 */
-	function wpshirohige_setup() {
+	function wpmulai_setup() {
 		/*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
-		 * If you're building a theme based on wpshirohige, use a find and replace
-		 * to change 'wpshirohige' to the name of your theme in all the template files
+		 * If you're building a theme based on wpmulai, use a find and replace
+		 * to change 'wpmulai' to the name of your theme in all the template files
 		 */
-		load_theme_textdomain( 'wpshirohige', get_template_directory() . '/languages' );
+		load_theme_textdomain( 'wpmulai', get_template_directory() . '/languages' );
 
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
@@ -46,7 +46,7 @@ if ( ! function_exists( 'wpshirohige_setup' ) ) {
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus(
 			array(
-				'primary' => __( 'Primary Menu', 'wpshirohige' ),
+				'primary' => __( 'Primary Menu', 'wpmulai' ),
 			)
 		);
 
@@ -96,7 +96,7 @@ if ( ! function_exists( 'wpshirohige_setup' ) ) {
 		add_theme_support(
 			'custom-background',
 			apply_filters(
-				'wpshirohige_custom_background_args',
+				'wpmulai_custom_background_args',
 				array(
 					'default-color' => 'ffffff',
 					'default-image' => '',
@@ -111,15 +111,15 @@ if ( ! function_exists( 'wpshirohige_setup' ) ) {
 		add_theme_support( 'responsive-embeds' );
 
 		// Check and setup theme default settings.
-		wpshirohige_setup_theme_default_settings();
+		wpmulai_setup_theme_default_settings();
 
 	}
 }
 
 
-add_filter( 'excerpt_more', 'wpshirohige_custom_excerpt_more' );
+add_filter( 'excerpt_more', 'wpmulai_custom_excerpt_more' );
 
-if ( ! function_exists( 'wpshirohige_custom_excerpt_more' ) ) {
+if ( ! function_exists( 'wpmulai_custom_excerpt_more' ) ) {
 	/**
 	 * Removes the ... from the excerpt read more link
 	 *
@@ -127,7 +127,7 @@ if ( ! function_exists( 'wpshirohige_custom_excerpt_more' ) ) {
 	 *
 	 * @return string
 	 */
-	function wpshirohige_custom_excerpt_more( $more ) {
+	function wpmulai_custom_excerpt_more( $more ) {
 		if ( ! is_admin() ) {
 			$more = '';
 		}
@@ -135,9 +135,9 @@ if ( ! function_exists( 'wpshirohige_custom_excerpt_more' ) ) {
 	}
 }
 
-add_filter( 'wp_trim_excerpt', 'wpshirohige_all_excerpts_get_more_link' );
+add_filter( 'wp_trim_excerpt', 'wpmulai_all_excerpts_get_more_link' );
 
-if ( ! function_exists( 'wpshirohige_all_excerpts_get_more_link' ) ) {
+if ( ! function_exists( 'wpmulai_all_excerpts_get_more_link' ) ) {
 	/**
 	 * Adds a custom read more link to all excerpts, manually or automatically generated
 	 *
@@ -145,11 +145,11 @@ if ( ! function_exists( 'wpshirohige_all_excerpts_get_more_link' ) ) {
 	 *
 	 * @return string
 	 */
-	function wpshirohige_all_excerpts_get_more_link( $post_excerpt ) {
+	function wpmulai_all_excerpts_get_more_link( $post_excerpt ) {
 		if ( ! is_admin() ) {
-			$post_excerpt = $post_excerpt . ' [...]<p><a class="btn btn-secondary wpshirohige-read-more-link" href="' . esc_url( get_permalink( get_the_ID() ) ) . '">' . __(
+			$post_excerpt = $post_excerpt . ' [...]<p><a class="btn btn-secondary wpmulai-read-more-link" href="' . esc_url( get_permalink( get_the_ID() ) ) . '">' . __(
 				'Read More...',
-				'wpshirohige'
+				'wpmulai'
 			) . '</a></p>';
 		}
 		return $post_excerpt;

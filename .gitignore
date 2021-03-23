@@ -46,7 +46,7 @@ bower_components
 node_modules
 vendor
 
-# Other wpshirohige specific files and directories
+# Other wpmulai specific files and directories
 phpcs.xml
 dist/
 dist-product/

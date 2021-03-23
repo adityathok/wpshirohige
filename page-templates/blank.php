@@ -4,7 +4,7 @@
  *
  * Template for displaying a blank page.
  *
- * @package wpshirohige
+ * @package wpmulai
  */
 
 // Exit if accessed directly.

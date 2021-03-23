@@ -4,13 +4,13 @@
  *
  * Displays all of the <head> section and everything up till <div id="content">
  *
- * @package wpshirohige
+ * @package wpmulai
  */
 
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
-$container = get_theme_mod( 'wpshirohige_container_type' );
+$container = get_theme_mod( 'wpmulai_container_type' );
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -21,19 +21,19 @@ $container = get_theme_mod( 'wpshirohige_container_type' );
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?> <?php wpshirohige_body_attributes(); ?>>
+<body <?php body_class(); ?> <?php wpmulai_body_attributes(); ?>>
 <?php do_action( 'wp_body_open' ); ?>
 <div class="site" id="page">
 
 	<!-- ******************* The Navbar Area ******************* -->
 	<div id="wrapper-navbar">
 
-		<a class="skip-link sr-only sr-only-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'wpshirohige' ); ?></a>
+		<a class="skip-link sr-only sr-only-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'wpmulai' ); ?></a>
 
 		<nav id="main-nav" class="navbar navbar-expand-md navbar-dark bg-primary" aria-labelledby="main-nav-label">
 
 			<h2 id="main-nav-label" class="sr-only">
-				<?php esc_html_e( 'Main Navigation', 'wpshirohige' ); ?>
+				<?php esc_html_e( 'Main Navigation', 'wpmulai' ); ?>
 			</h2>
 
 		<?php if ( 'container' === $container ) : ?>
@@ -60,7 +60,7 @@ $container = get_theme_mod( 'wpshirohige_container_type' );
 					?>
 					<!-- end custom logo -->
 
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'wpshirohige' ); ?>">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'wpmulai' ); ?>">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 
@@ -75,7 +75,7 @@ $container = get_theme_mod( 'wpshirohige_container_type' );
 						'fallback_cb'     => '',
 						'menu_id'         => 'main-menu',
 						'depth'           => 2,
-						'walker'          => new wpshirohige_WP_Bootstrap_Navwalker(),
+						'walker'          => new wpmulai_WP_Bootstrap_Navwalker(),
 					)
 				);
 				?>

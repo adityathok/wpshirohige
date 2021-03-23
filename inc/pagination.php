@@ -2,13 +2,13 @@
 /**
  * Pagination layout
  *
- * @package wpshirohige
+ * @package wpmulai
  */
 
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
-if ( ! function_exists( 'wpshirohige_pagination' ) ) {
+if ( ! function_exists( 'wpmulai_pagination' ) ) {
 	/**
 	 * Displays the navigation to next/previous set of posts.
 	 *
@@ -39,7 +39,7 @@ if ( ! function_exists( 'wpshirohige_pagination' ) ) {
 	 * }
 	 * @param string       $class           (Optional) Classes to be added to the <ul> element. Default 'pagination'.
 	 */
-	function wpshirohige_pagination( $args = array(), $class = 'pagination' ) {
+	function wpmulai_pagination( $args = array(), $class = 'pagination' ) {
 
 		if ( ! isset( $args['total'] ) && $GLOBALS['wp_query']->max_num_pages <= 1 ) {
 			return;
@@ -50,11 +50,11 @@ if ( ! function_exists( 'wpshirohige_pagination' ) ) {
 			array(
 				'mid_size'           => 2,
 				'prev_next'          => true,
-				'prev_text'          => __( '&laquo;', 'wpshirohige' ),
-				'next_text'          => __( '&raquo;', 'wpshirohige' ),
+				'prev_text'          => __( '&laquo;', 'wpmulai' ),
+				'next_text'          => __( '&raquo;', 'wpmulai' ),
 				'type'               => 'array',
 				'current'            => max( 1, get_query_var( 'paged' ) ),
-				'screen_reader_text' => __( 'Posts navigation', 'wpshirohige' ),
+				'screen_reader_text' => __( 'Posts navigation', 'wpmulai' ),
 			)
 		);
 

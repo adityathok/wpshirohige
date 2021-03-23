@@ -2,7 +2,7 @@
 /**
  * The template for displaying search forms
  *
- * @package wpshirohige
+ * @package wpmulai
  */
 
 // Exit if accessed directly.
@@ -10,13 +10,13 @@ defined( 'ABSPATH' ) || exit;
 ?>
 
 <form method="get" id="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>" role="search">
-	<label class="sr-only" for="s"><?php esc_html_e( 'Search', 'wpshirohige' ); ?></label>
+	<label class="sr-only" for="s"><?php esc_html_e( 'Search', 'wpmulai' ); ?></label>
 	<div class="input-group">
 		<input class="field form-control" id="s" name="s" type="text"
-			placeholder="<?php esc_attr_e( 'Search &hellip;', 'wpshirohige' ); ?>" value="<?php the_search_query(); ?>">
+			placeholder="<?php esc_attr_e( 'Search &hellip;', 'wpmulai' ); ?>" value="<?php the_search_query(); ?>">
 		<span class="input-group-append">
 			<input class="submit btn btn-primary" id="searchsubmit" name="submit" type="submit"
-			value="<?php esc_attr_e( 'Search', 'wpshirohige' ); ?>">
+			value="<?php esc_attr_e( 'Search', 'wpmulai' ); ?>">
 		</span>
 	</div>
 </form>

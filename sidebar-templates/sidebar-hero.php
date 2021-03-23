@@ -2,7 +2,7 @@
 /**
  * Sidebar - hero setup
  *
- * @package wpshirohige
+ * @package wpmulai
  */
 
 // Exit if accessed directly.
@@ -25,7 +25,7 @@ defined( 'ABSPATH' ) || exit;
 
 			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 
-			<span class="sr-only"><?php esc_html_e( 'Previous', 'wpshirohige' ); ?></span>
+			<span class="sr-only"><?php esc_html_e( 'Previous', 'wpmulai' ); ?></span>
 
 		</a>
 
@@ -33,7 +33,7 @@ defined( 'ABSPATH' ) || exit;
 
 			<span class="carousel-control-next-icon" aria-hidden="true"></span>
 
-			<span class="sr-only"><?php esc_html_e( 'Next', 'wpshirohige' ); ?></span>
+			<span class="sr-only"><?php esc_html_e( 'Next', 'wpmulai' ); ?></span>
 
 		</a>
 

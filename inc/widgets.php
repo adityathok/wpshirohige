@@ -2,7 +2,7 @@
 /**
  * Declaring widgets
  *
- * @package wpshirohige
+ * @package wpmulai
  */
 
 // Exit if accessed directly.
@@ -14,9 +14,9 @@ defined( 'ABSPATH' ) || exit;
  *
  * @link https://developer.wordpress.org/reference/hooks/dynamic_sidebar_params/
  */
-add_filter( 'dynamic_sidebar_params', 'wpshirohige_widget_classes' );
+add_filter( 'dynamic_sidebar_params', 'wpmulai_widget_classes' );
 
-if ( ! function_exists( 'wpshirohige_widget_classes' ) ) {
+if ( ! function_exists( 'wpmulai_widget_classes' ) ) {
 
 	/**
 	 * Count number of visible widgets in a sidebar and add classes to widgets accordingly,
@@ -49,7 +49,7 @@ if ( ! function_exists( 'wpshirohige_widget_classes' ) ) {
 	 * }
 	 * @return array $params
 	 */
-	function wpshirohige_widget_classes( $params ) {
+	function wpmulai_widget_classes( $params ) {
 
 		global $sidebars_widgets;
 
@@ -89,20 +89,20 @@ if ( ! function_exists( 'wpshirohige_widget_classes' ) ) {
 		return $params;
 
 	}
-} // End of if function_exists( 'wpshirohige_widget_classes' ).
+} // End of if function_exists( 'wpmulai_widget_classes' ).
 
-add_action( 'widgets_init', 'wpshirohige_widgets_init' );
+add_action( 'widgets_init', 'wpmulai_widgets_init' );
 
-if ( ! function_exists( 'wpshirohige_widgets_init' ) ) {
+if ( ! function_exists( 'wpmulai_widgets_init' ) ) {
 	/**
 	 * Initializes themes widgets.
 	 */
-	function wpshirohige_widgets_init() {
+	function wpmulai_widgets_init() {
 		register_sidebar(
 			array(
-				'name'          => __( 'Right Sidebar', 'wpshirohige' ),
+				'name'          => __( 'Right Sidebar', 'wpmulai' ),
 				'id'            => 'right-sidebar',
-				'description'   => __( 'Right sidebar widget area', 'wpshirohige' ),
+				'description'   => __( 'Right sidebar widget area', 'wpmulai' ),
 				'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 				'after_widget'  => '</aside>',
 				'before_title'  => '<h3 class="widget-title">',
@@ -112,9 +112,9 @@ if ( ! function_exists( 'wpshirohige_widgets_init' ) ) {
 
 		register_sidebar(
 			array(
-				'name'          => __( 'Left Sidebar', 'wpshirohige' ),
+				'name'          => __( 'Left Sidebar', 'wpmulai' ),
 				'id'            => 'left-sidebar',
-				'description'   => __( 'Left sidebar widget area', 'wpshirohige' ),
+				'description'   => __( 'Left sidebar widget area', 'wpmulai' ),
 				'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 				'after_widget'  => '</aside>',
 				'before_title'  => '<h3 class="widget-title">',
@@ -124,9 +124,9 @@ if ( ! function_exists( 'wpshirohige_widgets_init' ) ) {
 
 		register_sidebar(
 			array(
-				'name'          => __( 'Hero Slider', 'wpshirohige' ),
+				'name'          => __( 'Hero Slider', 'wpmulai' ),
 				'id'            => 'hero',
-				'description'   => __( 'Hero slider area. Place two or more widgets here and they will slide!', 'wpshirohige' ),
+				'description'   => __( 'Hero slider area. Place two or more widgets here and they will slide!', 'wpmulai' ),
 				'before_widget' => '<div class="carousel-item">',
 				'after_widget'  => '</div>',
 				'before_title'  => '',
@@ -136,9 +136,9 @@ if ( ! function_exists( 'wpshirohige_widgets_init' ) ) {
 
 		register_sidebar(
 			array(
-				'name'          => __( 'Hero Canvas', 'wpshirohige' ),
+				'name'          => __( 'Hero Canvas', 'wpmulai' ),
 				'id'            => 'herocanvas',
-				'description'   => __( 'Full size canvas hero area for Bootstrap and other custom HTML markup', 'wpshirohige' ),
+				'description'   => __( 'Full size canvas hero area for Bootstrap and other custom HTML markup', 'wpmulai' ),
 				'before_widget' => '',
 				'after_widget'  => '',
 				'before_title'  => '',
@@ -148,9 +148,9 @@ if ( ! function_exists( 'wpshirohige_widgets_init' ) ) {
 
 		register_sidebar(
 			array(
-				'name'          => __( 'Top Full', 'wpshirohige' ),
+				'name'          => __( 'Top Full', 'wpmulai' ),
 				'id'            => 'statichero',
-				'description'   => __( 'Full top widget with dynamic grid', 'wpshirohige' ),
+				'description'   => __( 'Full top widget with dynamic grid', 'wpmulai' ),
 				'before_widget' => '<div id="%1$s" class="static-hero-widget %2$s dynamic-classes">',
 				'after_widget'  => '</div><!-- .static-hero-widget -->',
 				'before_title'  => '<h3 class="widget-title">',
@@ -160,9 +160,9 @@ if ( ! function_exists( 'wpshirohige_widgets_init' ) ) {
 
 		register_sidebar(
 			array(
-				'name'          => __( 'Footer Full', 'wpshirohige' ),
+				'name'          => __( 'Footer Full', 'wpmulai' ),
 				'id'            => 'footerfull',
-				'description'   => __( 'Full sized footer widget with dynamic grid', 'wpshirohige' ),
+				'description'   => __( 'Full sized footer widget with dynamic grid', 'wpmulai' ),
 				'before_widget' => '<div id="%1$s" class="footer-widget %2$s dynamic-classes">',
 				'after_widget'  => '</div><!-- .footer-widget -->',
 				'before_title'  => '<h3 class="widget-title">',
@@ -171,4 +171,4 @@ if ( ! function_exists( 'wpshirohige_widgets_init' ) ) {
 		);
 
 	}
-} // End of function_exists( 'wpshirohige_widgets_init' ).
+} // End of function_exists( 'wpmulai_widgets_init' ).

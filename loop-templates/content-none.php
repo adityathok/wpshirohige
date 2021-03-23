@@ -4,7 +4,7 @@
  *
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
- * @package wpshirohige
+ * @package wpmulai
  */
 
 // Exit if accessed directly.
@@ -15,7 +15,7 @@ defined( 'ABSPATH' ) || exit;
 
 	<header class="page-header">
 
-		<h1 class="page-title"><?php esc_html_e( 'Nothing Found', 'wpshirohige' ); ?></h1>
+		<h1 class="page-title"><?php esc_html_e( 'Nothing Found', 'wpmulai' ); ?></h1>
 
 	</header><!-- .page-header -->
 
@@ -27,7 +27,7 @@ defined( 'ABSPATH' ) || exit;
 			$kses = array( 'a' => array( 'href' => array() ) );
 			printf(
 				/* translators: 1: Link to WP admin new post page. */
-				'<p>' . wp_kses( __( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'wpshirohige' ), $kses ) . '</p>',
+				'<p>' . wp_kses( __( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'wpmulai' ), $kses ) . '</p>',
 				esc_url( admin_url( 'post-new.php' ) )
 			);
 
@@ -35,7 +35,7 @@ defined( 'ABSPATH' ) || exit;
 
 			printf(
 				'<p>%s<p>',
-				esc_html__( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'wpshirohige' )
+				esc_html__( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'wpmulai' )
 			);
 			get_search_form();
 
@@ -43,7 +43,7 @@ defined( 'ABSPATH' ) || exit;
 
 			printf(
 				'<p>%s<p>',
-				esc_html__( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'wpshirohige' )
+				esc_html__( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'wpmulai' )
 			);
 			get_search_form();
 

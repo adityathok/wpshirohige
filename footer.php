@@ -4,13 +4,13 @@
  *
  * Contains the closing of the #content div and all content after
  *
- * @package wpshirohige
+ * @package wpmulai
  */
 
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
-$container = get_theme_mod( 'wpshirohige_container_type' );
+$container = get_theme_mod( 'wpmulai_container_type' );
 ?>
 
 <?php get_template_part( 'sidebar-templates/sidebar', 'footerfull' ); ?>
@@ -27,7 +27,7 @@ $container = get_theme_mod( 'wpshirohige_container_type' );
 
 					<div class="site-info">
 
-						<?php wpshirohige_site_info(); ?>
+						<?php wpmulai_site_info(); ?>
 
 					</div><!-- .site-info -->
 

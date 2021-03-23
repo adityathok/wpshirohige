@@ -2,7 +2,7 @@
 /**
  * The sidebar containing the main widget area
  *
- * @package wpshirohige
+ * @package wpmulai
  */
 
 // Exit if accessed directly.
@@ -13,7 +13,7 @@ if ( ! is_active_sidebar( 'left-sidebar' ) ) {
 }
 
 // when both sidebars turned on reduce col size to 3 from 4.
-$sidebar_pos = get_theme_mod( 'wpshirohige_sidebar_position' );
+$sidebar_pos = get_theme_mod( 'wpmulai_sidebar_position' );
 ?>
 
 <?php if ( 'both' === $sidebar_pos ) : ?>

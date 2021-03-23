@@ -2,7 +2,7 @@
 /**
  * Hero setup
  *
- * @package wpshirohige
+ * @package wpmulai
  */
 
 // Exit if accessed directly.

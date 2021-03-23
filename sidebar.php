@@ -2,7 +2,7 @@
 /**
  * The sidebar containing the main widget area
  *
- * @package wpshirohige
+ * @package wpmulai
  */
 
 // Exit if accessed directly.

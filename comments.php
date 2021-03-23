@@ -5,7 +5,7 @@
  * The area of the page that contains both current comments
  * and the comment form.
  *
- * @package wpshirohige
+ * @package wpmulai
  */
 
 // Exit if accessed directly.
@@ -34,7 +34,7 @@ if ( post_password_required() ) {
 			if ( 1 === (int) $comments_number ) {
 				printf(
 					/* translators: %s: post title */
-					esc_html_x( 'One thought on &ldquo;%s&rdquo;', 'comments title', 'wpshirohige' ),
+					esc_html_x( 'One thought on &ldquo;%s&rdquo;', 'comments title', 'wpmulai' ),
 					'<span>' . get_the_title() . '</span>'
 				);
 			} else {
@@ -46,7 +46,7 @@ if ( post_password_required() ) {
 							'%1$s thoughts on &ldquo;%2$s&rdquo;',
 							$comments_number,
 							'comments title',
-							'wpshirohige'
+							'wpmulai'
 						)
 					),
 					number_format_i18n( $comments_number ), // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
@@ -61,17 +61,17 @@ if ( post_password_required() ) {
 
 			<nav class="comment-navigation" id="comment-nav-above">
 
-				<h1 class="sr-only"><?php esc_html_e( 'Comment navigation', 'wpshirohige' ); ?></h1>
+				<h1 class="sr-only"><?php esc_html_e( 'Comment navigation', 'wpmulai' ); ?></h1>
 
 				<?php if ( get_previous_comments_link() ) { ?>
 					<div class="nav-previous">
-						<?php previous_comments_link( __( '&larr; Older Comments', 'wpshirohige' ) ); ?>
+						<?php previous_comments_link( __( '&larr; Older Comments', 'wpmulai' ) ); ?>
 					</div>
 				<?php } ?>
 
 				<?php	if ( get_next_comments_link() ) { ?>
 					<div class="nav-next">
-						<?php next_comments_link( __( 'Newer Comments &rarr;', 'wpshirohige' ) ); ?>
+						<?php next_comments_link( __( 'Newer Comments &rarr;', 'wpmulai' ) ); ?>
 					</div>
 				<?php } ?>
 
@@ -97,17 +97,17 @@ if ( post_password_required() ) {
 
 			<nav class="comment-navigation" id="comment-nav-below">
 
-				<h1 class="sr-only"><?php esc_html_e( 'Comment navigation', 'wpshirohige' ); ?></h1>
+				<h1 class="sr-only"><?php esc_html_e( 'Comment navigation', 'wpmulai' ); ?></h1>
 
 				<?php if ( get_previous_comments_link() ) { ?>
 					<div class="nav-previous">
-						<?php previous_comments_link( __( '&larr; Older Comments', 'wpshirohige' ) ); ?>
+						<?php previous_comments_link( __( '&larr; Older Comments', 'wpmulai' ) ); ?>
 					</div>
 				<?php } ?>
 
 				<?php	if ( get_next_comments_link() ) { ?>
 					<div class="nav-next">
-						<?php next_comments_link( __( 'Newer Comments &rarr;', 'wpshirohige' ) ); ?>
+						<?php next_comments_link( __( 'Newer Comments &rarr;', 'wpmulai' ) ); ?>
 					</div>
 				<?php } ?>
 

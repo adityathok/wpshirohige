@@ -13,10 +13,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 $my_orders_columns = apply_filters(
 	'woocommerce_my_account_my_orders_columns',
 	array(
-		'order-number'  => esc_html__( 'Order', 'wpshirohige' ),
-		'order-date'    => esc_html__( 'Date', 'wpshirohige' ),
-		'order-status'  => esc_html__( 'Status', 'wpshirohige' ),
-		'order-total'   => esc_html__( 'Total', 'wpshirohige' ),
+		'order-number'  => esc_html__( 'Order', 'wpmulai' ),
+		'order-date'    => esc_html__( 'Date', 'wpmulai' ),
+		'order-status'  => esc_html__( 'Status', 'wpmulai' ),
+		'order-total'   => esc_html__( 'Total', 'wpmulai' ),
 		'order-actions' => '&nbsp;',
 	)
 );
@@ -36,7 +36,7 @@ $customer_orders = get_posts(
 
 if ( $customer_orders ) : ?>
 
-	<h2><?php echo apply_filters( 'woocommerce_my_account_my_orders_title', esc_html__( 'Recent orders', 'wpshirohige' ) ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></h2>
+	<h2><?php echo apply_filters( 'woocommerce_my_account_my_orders_title', esc_html__( 'Recent orders', 'wpmulai' ) ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></h2>
 
 	<table class="shop_table shop_table_responsive my_account_orders table-hover table-striped">
 
@@ -62,7 +62,7 @@ if ( $customer_orders ) : ?>
 
 							<?php elseif ( 'order-number' === $column_id ) : ?>
 								<a href="<?php echo esc_url( $order->get_view_order_url() ); ?>">
-									<?php echo _x( '#', 'hash before order number', 'wpshirohige' ) . $order->get_order_number(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
+									<?php echo _x( '#', 'hash before order number', 'wpmulai' ) . $order->get_order_number(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 								</a>
 
 							<?php elseif ( 'order-date' === $column_id ) : ?>
@@ -74,7 +74,7 @@ if ( $customer_orders ) : ?>
 							<?php elseif ( 'order-total' === $column_id ) : ?>
 								<?php
 								/* translators: 1: formatted order total 2: total order items */
-								printf( _n( '%1$s for %2$s item', '%1$s for %2$s items', $item_count, 'wpshirohige' ), $order->get_formatted_order_total(), $item_count ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+								printf( _n( '%1$s for %2$s item', '%1$s for %2$s items', $item_count, 'wpmulai' ), $order->get_formatted_order_total(), $item_count ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 								?>
 
 							<?php elseif ( 'order-actions' === $column_id ) : ?>

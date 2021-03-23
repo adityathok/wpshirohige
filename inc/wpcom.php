@@ -4,21 +4,21 @@
  *
  * This file is centrally included from `wp-content/mu-plugins/wpcom-theme-compat.php`.
  *
- * @package wpshirohige
+ * @package wpmulai
  */
 
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
-add_action( 'after_setup_theme', 'wpshirohige_wpcom_setup' );
+add_action( 'after_setup_theme', 'wpmulai_wpcom_setup' );
 
-if ( ! function_exists( 'wpshirohige_wpcom_setup' ) ) {
+if ( ! function_exists( 'wpmulai_wpcom_setup' ) ) {
 	/**
 	 * Adds support for wp.com-specific theme functions.
 	 *
 	 * @global array $themecolors
 	 */
-	function wpshirohige_wpcom_setup() {
+	function wpmulai_wpcom_setup() {
 		global $themecolors;
 
 		// Set theme colors for third party services.
@@ -37,13 +37,13 @@ if ( ! function_exists( 'wpshirohige_wpcom_setup' ) ) {
 	}
 }
 
-add_action( 'wp_enqueue_scripts', 'wpshirohige_wpcom_styles' );
+add_action( 'wp_enqueue_scripts', 'wpmulai_wpcom_styles' );
 
-if ( ! function_exists( 'wpshirohige_wpcom_styles' ) ) {
+if ( ! function_exists( 'wpmulai_wpcom_styles' ) ) {
 	/**
 	 * WordPress.com-specific styles
 	 */
-	function wpshirohige_wpcom_styles() {
-		wp_enqueue_style( 'wpshirohige-wpcom', get_template_directory_uri() . '/inc/style-wpcom.css', array(), '20160411' );
+	function wpmulai_wpcom_styles() {
+		wp_enqueue_style( 'wpmulai-wpcom', get_template_directory_uri() . '/inc/style-wpcom.css', array(), '20160411' );
 	}
 }

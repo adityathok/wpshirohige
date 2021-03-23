@@ -2,18 +2,18 @@
 /**
  * Check and setup theme's default settings
  *
- * @package wpshirohige
+ * @package wpmulai
  */
 
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
-if ( ! function_exists( 'wpshirohige_setup_theme_default_settings' ) ) {
+if ( ! function_exists( 'wpmulai_setup_theme_default_settings' ) ) {
 	/**
 	 * Store default theme settings in database.
 	 */
-	function wpshirohige_setup_theme_default_settings() {
-		$defaults = wpshirohige_get_theme_default_settings();
+	function wpmulai_setup_theme_default_settings() {
+		$defaults = wpmulai_get_theme_default_settings();
 		$settings = get_theme_mods();
 		foreach ( $defaults as $setting_id => $default_value ) {
 			// Check if setting is set, if not set it to its default value.
@@ -24,17 +24,17 @@ if ( ! function_exists( 'wpshirohige_setup_theme_default_settings' ) ) {
 	}
 }
 
-if ( ! function_exists( 'wpshirohige_get_theme_default_settings' ) ) {
+if ( ! function_exists( 'wpmulai_get_theme_default_settings' ) ) {
 	/**
 	 * Retrieve default theme settings.
 	 *
 	 * @return array
 	 */
-	function wpshirohige_get_theme_default_settings() {
+	function wpmulai_get_theme_default_settings() {
 		$defaults = array(
-			'wpshirohige_posts_index_style' => 'default',   // Latest blog posts style.
-			'wpshirohige_sidebar_position'  => 'right',     // Sidebar position.
-			'wpshirohige_container_type'    => 'container', // Container width.
+			'wpmulai_posts_index_style' => 'default',   // Latest blog posts style.
+			'wpmulai_sidebar_position'  => 'right',     // Sidebar position.
+			'wpmulai_container_type'    => 'container', // Container width.
 		);
 
 		/**
@@ -42,6 +42,6 @@ if ( ! function_exists( 'wpshirohige_get_theme_default_settings' ) ) {
 		 *
 		 * @param array $defaults Array of default theme settings.
 		 */
-		return apply_filters( 'wpshirohige_theme_default_settings', $defaults );
+		return apply_filters( 'wpmulai_theme_default_settings', $defaults );
 	}
 }

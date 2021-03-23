@@ -2,13 +2,13 @@
 /**
  * Static hero sidebar setup
  *
- * @package wpshirohige
+ * @package wpmulai
  */
 
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
-$container = get_theme_mod( 'wpshirohige_container_type' );
+$container = get_theme_mod( 'wpmulai_container_type' );
 ?>
 
 <?php if ( is_active_sidebar( 'statichero' ) ) : ?>

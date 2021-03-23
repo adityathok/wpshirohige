@@ -1,8 +1,8 @@
 # Travis CI configuration file.
 # @link https://travis-ci.org/
 
-# For use with the wpshirohige WordPress theme
-# @link https://github.com/adityathok/wpshirohige
+# For use with the wpmulai WordPress theme
+# @link https://github.com/adityathok/wpmulai
 
 
 # Declare virtual environment and operating system.

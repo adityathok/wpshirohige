@@ -2,7 +2,7 @@
 /**
  * The template for displaying search results pages
  *
- * @package wpshirohige
+ * @package wpmulai
  */
 
 // Exit if accessed directly.
@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 
 get_header();
 
-$container = get_theme_mod( 'wpshirohige_container_type' );
+$container = get_theme_mod( 'wpmulai_container_type' );
 
 ?>
 
@@ -33,7 +33,7 @@ $container = get_theme_mod( 'wpshirohige_container_type' );
 								<?php
 								printf(
 									/* translators: %s: query term */
-									esc_html__( 'Search Results for: %s', 'wpshirohige' ),
+									esc_html__( 'Search Results for: %s', 'wpmulai' ),
 									'<span>' . get_search_query() . '</span>'
 								);
 								?>
@@ -64,7 +64,7 @@ $container = get_theme_mod( 'wpshirohige_container_type' );
 			</main><!-- #main -->
 
 			<!-- The pagination component -->
-			<?php wpshirohige_pagination(); ?>
+			<?php wpmulai_pagination(); ?>
 
 			<!-- Do the right sidebar check -->
 			<?php get_template_part( 'global-templates/right-sidebar-check' ); ?>

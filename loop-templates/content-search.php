@@ -2,7 +2,7 @@
 /**
  * Search results partial template
  *
- * @package wpshirohige
+ * @package wpmulai
  */
 
 // Exit if accessed directly.
@@ -24,7 +24,7 @@ defined( 'ABSPATH' ) || exit;
 
 			<div class="entry-meta">
 
-				<?php wpshirohige_posted_on(); ?>
+				<?php wpmulai_posted_on(); ?>
 
 			</div><!-- .entry-meta -->
 
@@ -40,7 +40,7 @@ defined( 'ABSPATH' ) || exit;
 
 	<footer class="entry-footer">
 
-		<?php wpshirohige_entry_footer(); ?>
+		<?php wpmulai_entry_footer(); ?>
 
 	</footer><!-- .entry-footer -->
 

@@ -2,7 +2,7 @@
 /**
  * Content empty partial template
  *
- * @package wpshirohige
+ * @package wpmulai
  */
 
 // Exit if accessed directly.

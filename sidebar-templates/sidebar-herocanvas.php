@@ -2,7 +2,7 @@
 /**
  * Sidebar - The Hero Canvas Widget Area
  *
- * @package wpshirohige
+ * @package wpmulai
  */
 
 // Exit if accessed directly.
