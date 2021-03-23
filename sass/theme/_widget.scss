@@ -1,0 +1,72 @@
+/*
+* Use existing Bootstrap 4 classes and
+* variables to extend - override widget element style
+*
+*/
+
+//widget basic
+.widget{
+    margin-bottom: 2rem;
+
+    //ul widget
+    ul {
+        padding-left: 1.5rem;
+        margin: 0;
+    }
+}
+
+//Widget Calendar
+.widget_calendar {
+    .wp-calendar-table {
+        width: 100%;
+        thead {
+            th {
+                text-align: center;
+                background-color: #333333;
+                color: #ffff;
+                padding: .5rem;
+            }
+        }
+        tbody {
+            td {
+                text-align: center;
+                border-bottom: 1px solid #dddddd;
+                padding: .5rem;
+            }
+        }
+    }
+}
+
+//widge Tag
+.widget_tag_cloud {
+    .tagcloud {
+        a {
+            font-size: 90% !important;
+            display: inline-block;
+            background-color: #cecece;
+            padding: .4rem .5rem;
+            margin: 0 .3rem .3rem 0;
+            text-decoration: none;
+        }
+    }
+}
+
+//widget Recent Post
+.widget_recent_entries {
+    ul {
+        padding: 0;
+        list-style-type: none;
+
+        li:not(:last-child) {
+            margin-bottom: .25em;
+        }
+
+        a {
+            display: block;
+        }
+        .post-date {
+            font-size: 90%;
+            display: block;
+        }
+    }
+}
