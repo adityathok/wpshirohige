@@ -10,36 +10,16 @@
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
-$container = get_theme_mod( 'wpmulai_container_type' );
 ?>
 
-<?php get_template_part( 'sidebar-templates/sidebar', 'footerfull' ); ?>
 
-<div class="wrapper" id="wrapper-footer">
+	<?php 
+	wpmulai_footer_before(); 
 
-	<div class="<?php echo esc_attr( $container ); ?>">
+	wpmulai_footer(); 
 
-		<div class="row">
-
-			<div class="col-md-12">
-
-				<footer class="site-footer" id="colophon">
-
-					<div class="site-info">
-
-						<?php wpmulai_site_info(); ?>
-
-					</div><!-- .site-info -->
-
-				</footer><!-- #colophon -->
-
-			</div><!--col end -->
-
-		</div><!-- row end -->
-
-	</div><!-- container end -->
-
-</div><!-- wrapper end -->
+	wpmulai_footer_after();
+	?>
 
 </div><!-- #page we need this extra closing tag here -->
 

@@ -25,3 +25,24 @@ function wpmulai_header() {
  function wpmulai_header_after() {
 	do_action( 'wpmulai_header_after' );
 }
+
+ /**
+ * Site before Footer
+ */
+ function wpmulai_footer_before() {
+	do_action( 'wpmulai_footer_before' );
+}
+
+ /**
+ * Site Footer
+ */
+function wpmulai_footer() {
+	do_action( 'wpmulai_footer' );
+}
+
+/**
+ * Site after Footer
+ */
+ function wpmulai_footer_after() {
+	do_action( 'wpmulai_footer_after' );
+}
