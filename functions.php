@@ -13,6 +13,8 @@ $wpmulai_inc_dir = get_template_directory() . '/inc';
 
 // Array of files to include.
 $wpmulai_includes = array(
+	'/theme-hooks.php',                  	// Initialize theme hooks.
+	'/theme-layout.php',                  	// Initialize theme layout.
 	'/theme-settings.php',                  // Initialize theme default settings.
 	'/setup.php',                           // Theme setup and custom theme supports.
 	'/widgets.php',                         // Register widget area.
