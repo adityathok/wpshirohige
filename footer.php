@@ -12,6 +12,7 @@ defined( 'ABSPATH' ) || exit;
 
 ?>
 
+	</div><!-- .page-content we need this extra closing tag here -->
 
 	<?php 
 	wpmulai_footer_before(); 

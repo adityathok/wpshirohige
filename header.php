@@ -38,4 +38,4 @@ defined('ABSPATH') || exit;
 		wpmulai_header_after();
 		?>
 
-		
+		<div class="site-content" id="page-content">	
